@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6569CB021B8D6847009AB4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569CB011B8D6847009AB4CB /* AppDelegate.swift */; };
-		6569CB041B8D6847009AB4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569CB031B8D6847009AB4CB /* ViewController.swift */; };
-		6569CB071B8D6847009AB4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6569CB051B8D6847009AB4CB /* Main.storyboard */; };
 		6569CB091B8D6847009AB4CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6569CB081B8D6847009AB4CB /* Images.xcassets */; };
 		6569CB0C1B8D6847009AB4CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6569CB0A1B8D6847009AB4CB /* LaunchScreen.xib */; };
 		6569CB181B8D6847009AB4CB /* SwiftCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569CB171B8D6847009AB4CB /* SwiftCounterTests.swift */; };
+		6569CB221B8D6BF3009AB4CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569CB211B8D6BF3009AB4CB /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 		6569CAFC1B8D6847009AB4CB /* SwiftCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6569CB001B8D6847009AB4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6569CB011B8D6847009AB4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6569CB031B8D6847009AB4CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6569CB061B8D6847009AB4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6569CB081B8D6847009AB4CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6569CB0B1B8D6847009AB4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6569CB111B8D6847009AB4CB /* SwiftCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6569CB161B8D6847009AB4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6569CB171B8D6847009AB4CB /* SwiftCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCounterTests.swift; sourceTree = "<group>"; };
+		6569CB211B8D6BF3009AB4CB /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6569CB011B8D6847009AB4CB /* AppDelegate.swift */,
-				6569CB031B8D6847009AB4CB /* ViewController.swift */,
-				6569CB051B8D6847009AB4CB /* Main.storyboard */,
+				6569CB211B8D6BF3009AB4CB /* CounterViewController.swift */,
 				6569CB081B8D6847009AB4CB /* Images.xcassets */,
 				6569CB0A1B8D6847009AB4CB /* LaunchScreen.xib */,
 				6569CAFF1B8D6847009AB4CB /* Supporting Files */,
@@ -161,6 +158,7 @@
 				TargetAttributes = {
 					6569CAFB1B8D6847009AB4CB = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = E56ATFSAWD;
 					};
 					6569CB101B8D6847009AB4CB = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,7 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6569CB071B8D6847009AB4CB /* Main.storyboard in Resources */,
 				6569CB0C1B8D6847009AB4CB /* LaunchScreen.xib in Resources */,
 				6569CB091B8D6847009AB4CB /* Images.xcassets in Resources */,
 			);
@@ -212,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6569CB041B8D6847009AB4CB /* ViewController.swift in Sources */,
+				6569CB221B8D6BF3009AB4CB /* CounterViewController.swift in Sources */,
 				6569CB021B8D6847009AB4CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +233,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6569CB051B8D6847009AB4CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6569CB061B8D6847009AB4CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6569CB0A1B8D6847009AB4CB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +400,7 @@
 				6569CB1D1B8D6847009AB4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6569CB1E1B8D6847009AB4CB /* Build configuration list for PBXNativeTarget "SwiftCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +409,7 @@
 				6569CB201B8D6847009AB4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
