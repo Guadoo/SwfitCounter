@@ -154,6 +154,7 @@ class CounterViewController: UIViewController {
         
         addTimeButton = UIView()
         addTimeButton!.backgroundColor = UIColor.blueColor()
+        addTimeButton!.tag = 1 // 用于识别addTimeButton View
         
         self.view.addSubview(addTimeButton!)
     }
@@ -237,17 +238,25 @@ class CounterViewController: UIViewController {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         
         for touch: AnyObject in touches{
-            var t:UITouch = touch as! UITouch
+            
+            //仅当按住AddingTime View时 增加时间
+            
+            if touch.view!!.tag == 1{
+                
+                isAddingTime = !isAddingTime
+            }
         }
-
-        isAddingTime = !isAddingTime
-        
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         
-        isAddingTime = !isAddingTime
-        
+        for touch: AnyObject in touches{
+            
+            if touch.view!!.tag == 1{
+                
+                isAddingTime = !isAddingTime
+            }
+        }
     }
     
     
